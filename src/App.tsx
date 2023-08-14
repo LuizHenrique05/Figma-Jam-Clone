@@ -1,4 +1,4 @@
-import ReactFlow, { Background, Connection, ConnectionMode, Controls, Node, addEdge, useEdgesState, useNodesState } from 'reactflow';
+import ReactFlow, { Background, Connection, ConnectionMode, Controls, addEdge, useEdgesState, useNodesState } from 'reactflow';
 import * as Toolbar from '@radix-ui/react-toolbar'
 import { zinc } from 'tailwindcss/colors';
 import 'reactflow/dist/style.css';
