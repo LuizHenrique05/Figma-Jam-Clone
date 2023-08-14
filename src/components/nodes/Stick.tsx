@@ -6,7 +6,7 @@ export function Stick({ selected, data }: NodeProps) {
     
     function handleKeyDown(e: any) {
         //element parent
-        parent = e.target.parentNode.parentNode
+        let parent = e.target.parentNode.parentNode
     
         // Get the computed styles for the element
         const computed = window.getComputedStyle(e.target)
@@ -29,7 +29,7 @@ export function Stick({ selected, data }: NodeProps) {
     }
 
     return (
-        <div className='bg-transparent rounded w-full h-full min-w-[100px] bg-blue-300' style={{ height: nodeHeight }} >
+        <div className='rounded w-full h-full min-w-[100px] bg-blue-300' style={{ height: nodeHeight }} >
             <NodeResizer 
                 minWidth={100}
                 minHeight={nodeHeight}
